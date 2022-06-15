@@ -12,7 +12,6 @@ import com.dicoding.picodiploma.submissionaplikasistoryapp.R
 import com.dicoding.picodiploma.submissionaplikasistoryapp.databinding.ActivityLoginBinding
 import com.dicoding.picodiploma.submissionaplikasistoryapp.model.UserModel
 import com.dicoding.picodiploma.submissionaplikasistoryapp.view.home.HomeActivity
-import com.dicoding.picodiploma.submissionaplikasistoryapp.view.main.MainActivity
 import com.dicoding.picodiploma.submissionaplikasistoryapp.view.welcome.ViewModelFactory
 
 class LoginActivity : AppCompatActivity() {

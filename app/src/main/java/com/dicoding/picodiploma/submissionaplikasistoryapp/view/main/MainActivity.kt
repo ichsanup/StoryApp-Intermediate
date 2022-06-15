@@ -7,7 +7,6 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.dicoding.picodiploma.submissionaplikasistoryapp.databinding.ActivityMainBinding
 import com.dicoding.picodiploma.submissionaplikasistoryapp.view.home.HomeActivity
-import com.dicoding.picodiploma.submissionaplikasistoryapp.view.login.LoginViewModel
 import com.dicoding.picodiploma.submissionaplikasistoryapp.view.welcome.ViewModelFactory
 import com.dicoding.picodiploma.submissionaplikasistoryapp.view.welcome.WelcomeActivity
 

@@ -19,8 +19,6 @@ import androidx.core.content.res.ResourcesCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.dicoding.picodiploma.submissionaplikasistoryapp.R
 import com.dicoding.picodiploma.submissionaplikasistoryapp.databinding.ActivityMapsBinding
-import com.dicoding.picodiploma.submissionaplikasistoryapp.respones.ListStoryItem
-import com.dicoding.picodiploma.submissionaplikasistoryapp.view.home.HomeViewModel
 import com.dicoding.picodiploma.submissionaplikasistoryapp.view.welcome.ViewModelFactory
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -79,6 +77,26 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                             .title(story.name)
                             .snippet(story.description)
                     )
+
+                    mMap.setOnMapLongClickListener { latLng ->
+                        mMap.addMarker(
+                            MarkerOptions()
+                                .position(latLng)
+                                .title("New Marker")
+                                .snippet("Lat: ${latLng.latitude} Long: ${latLng.longitude}")
+                                .icon(vectorToBitmap(R.drawable.ic_android_black, Color.parseColor("#3DDC84")))
+                        )
+                    }
+
+                    mMap.setOnPoiClickListener { pointOfInterest ->
+                        val poiMarker = mMap.addMarker(
+                            MarkerOptions()
+                                .position(pointOfInterest.latLng)
+                                .title(pointOfInterest.name)
+                                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA))
+                        )
+                        poiMarker?.showInfoWindow()
+                    }
                 }
             }
 
@@ -124,27 +142,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     private fun vectorToBitmap(@DrawableRes id: Int, @ColorInt color: Int): BitmapDescriptor {
-
-        mMap.setOnMapLongClickListener { latLng ->
-            mMap.addMarker(
-                MarkerOptions()
-                    .position(latLng)
-                    .title("New Marker")
-                    .snippet("Lat: ${latLng.latitude} Long: ${latLng.longitude}")
-                    .icon(vectorToBitmap(R.drawable.ic_android_black, Color.parseColor("#3DDC84")))
-            )
-        }
-
-        mMap.setOnPoiClickListener { pointOfInterest ->
-            val poiMarker = mMap.addMarker(
-                MarkerOptions()
-                    .position(pointOfInterest.latLng)
-                    .title(pointOfInterest.name)
-                    .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_MAGENTA))
-            )
-            poiMarker?.showInfoWindow()
-        }
-
         val vectorDrawable = ResourcesCompat.getDrawable(resources, id, null)
         if (vectorDrawable == null) {
             Log.e("BitmapHelper", "Resource not found")
