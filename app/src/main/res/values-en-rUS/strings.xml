@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">StoryAppApk</string>
+    <string name="copyright">© 2022 Ichsan</string>
+    <string name="Created">Uploaded at %1$s,</string>
+    <string name="daftar_cerita">Let\'s Start Nowww</string>
+    <string name="logout">Logout</string>
+    <string name="titlewelcomepage">Welcome to the Story App</string>
+    <string name="messagewelcome">Let\'s Start Your Story</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
+    <string name="singuptext">Complete Your Data Below</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="inputdata">Enter Your Data First</string>
+    <string name="showtext">Are you ready to explore??</string>
+    <string name="gambarlogin">LoginImage</string>
+    <string name="gambarmain">MainImage</string>
+    <string name="gambarsignup">SignupImage</string>
+    <string name="gambarwelcome">WelcomeImage</string>
+    <string name="lanjutkan">Enter</string>
+    <string name="gambarrowstory">RowStoryImage</string>
+    <string name="gambardetailstory">DetailStoryImage</string>
+    <string name="kamera">Camera</string>
+    <string name="deskripsi">Description</string>
+    <string name="upload">UPLOAD</string>
+    <string name="galery">Galery</string>
+    <string name="attention">Fill your data first</string>
+    <string name="login_form">Login Page</string>
+    <string name="story_page">Story Page</string>
+    <string name="detail_page">Detail Page</string>
+    <string name="main_page">APK Story APP</string>
+    <string name="tambah_story">Add Story</string>
+    <string name="email_statement">Email isn\'t Valid</string>
+    <string name="formr_register">Registration Page</string>
+    <string name="password_statement">Password less than 6</string>
+    <string name="retry">Retry</string>
+</resources>

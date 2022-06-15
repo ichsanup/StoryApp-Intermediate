@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">StoryAppApk</string>
+    <string name="daftar_cerita">Ayoo Mulai Sekarang!!</string>
+    <string name="copyright">© 2022 Ichsan</string>
+    <string name="logout">Keluar</string>
+    <string name="titlewelcomepage">Selamat Datang di Aplikasi Story </string>
+    <string name="greeting" translatable="false">Halo %1$s</string>
+    <string name="messagewelcome">Mari Mulai Ceritamu</string>
+    <string name="login">Masuk</string>
+    <string name="signup">Daftar</string>
+    <string name="singuptext">Lengkapi data dirimu dibawah ini</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="inputdata">Masukan Dulu Datamu</string>
+    <string name="showtext">Sudah siap untuk menjelajah??</string>
+    <string name="gambarlogin">GambarLogin</string>
+    <string name="gambarmain">GambarMain</string>
+    <string name="gambarsignup">GambarSignup</string>
+    <string name="gambarwelcome">GambarWelcome</string>
+    <string name="lanjutkan">Masuk</string>
+    <string name="Created">Di unggah pada %1$s,</string>
+    <string name="gambarrowstory">GambarRowStory</string>
+    <string name="gambardetailstory">GambarDetailStory</string>
+    <string name="kamera">Kamera</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="upload">UPLOAD</string>
+    <string name="galery">Galery</string>
+    <string name="attention">Isi Dahulu</string>
+    <string name="login_form">Halaman Login</string>
+    <string name="story_page">Halaman Story</string>
+    <string name="detail_page">Halaman Detail</string>
+    <string name="main_page">APK Story APP</string>
+    <string name="tambah_story">Tambah Story</string>
+    <string name="email_statement">Email Tidak Valid </string>
+    <string name="formr_register">Halaman Pendaftaran </string>
+    <string name="password_statement">Password Kurang Dari 6</string>
+    <string name="retry">Coba Lagi</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>
