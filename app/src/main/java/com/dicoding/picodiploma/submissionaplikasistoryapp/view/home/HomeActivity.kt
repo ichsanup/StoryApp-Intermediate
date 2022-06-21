@@ -22,7 +22,6 @@ import com.dicoding.picodiploma.submissionaplikasistoryapp.view.welcome.WelcomeA
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     private lateinit var factory: ViewModelFactory
-    private var token = " "
     private val homeViewModel: HomeViewModel by viewModels { factory }
     private val storiesViewModel: StoriesViewModel by viewModels {
         StoriesViewModelFactory(this)
@@ -81,10 +80,6 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    /*private fun getAllStories(token: String) {
-        homeViewModel.getAllStories(token)
-    }*/
-
     //Out
     private fun moveActivity() {
         startActivity(Intent(this@HomeActivity, WelcomeActivity::class.java))
@@ -135,6 +130,10 @@ class HomeActivity : AppCompatActivity() {
             }
             else -> super.onOptionsItemSelected(item)
         }
+    }
+
+    companion object{
+        var token = "token"
     }
 }
 

@@ -6,7 +6,6 @@ import com.dicoding.picodiploma.submissionaplikasistoryapp.model.Repository
 import kotlinx.coroutines.launch
 
 class MainViewModel (private val repo:Repository):ViewModel(){
-
     fun logout() {
         viewModelScope.launch {
             repo.logout()
